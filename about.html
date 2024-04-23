@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title> Accueil | KART E.C.</title>
+    <link rel="icon" type="image/x-icon" href="https://s2.qwant.com/thumbr/0x380/d/6/8aaf2f2b76abf61ac31bd7cc470521dd78f6385cd5e81fc556d24a78c463c8/Alpine-logo-1440x900.png?u=https%3A%2F%2Fwww.carlogos.org%2Flogo%2FAlpine-logo-1440x900.png&q=0&b=1&p=0&a=0.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #680000;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(255, 47, 47); 
+            position: fixed; 
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block; 
+            color: #fff; 
+            text-align: center;
+            padding: 26px 28px; /* marge entre les boutons et le bord de la page */
+            text-decoration: none;
+            transition: background-color 1s;
+        }
+        .navbar span {
+            float: center;
+            display: block; 
+            color: #ff0000; 
+            font-size: 30px;
+            padding: 10px 10px; 
+            background-color: #ffffff;
+        }
+        .navbar a:hover { /* quand on passe la souris dessus */
+            background-color: #ffffff; 
+            color: #fc0000; 
+        }
+        .navbar img {
+            float: right;
+            margin-right: 10px; 
+            height: 70px;
+        }
+        .content {
+            margin-top: 160px; /* marge de la hauteur */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 70px;
+            background-color: #e7e7e7;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content2 {
+            margin-top: 50px; /* marge de la hauteur */
+        }
+        .container2 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 85px;
+            background-color: #e7e7e7;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: middle;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .animation {
+            display: block;
+            text-align: center;
+            animation: pulse 1s infinite;
+            font-size: 20px;
+        }
+        button {
+            display: block;
+            color: #000000;
+            text-align: center;
+            border-radius: 5px;
+            padding: 26px 28px; /* marge entre les boutons et le bord de la page */
+            font-size: 20px;
+            transition: background-color 1s;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span> Projet KART E.C. / Terminale 3 - 2024</span>
+        <img src="https://lyceeionesco.fr/sites/default/files/Logo300.jpg" alt="Logo" /> 
+        <a href="#">Accueil</a>
+        <a href="index.html">Tableau de Bord</a>
+        <a href="zonegerance.html">Zone de Gérance</a>
+    </div>
+    <div class="content2">
+        <div class="container2">
+            <h1>Kart Electrique Connecté</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Bienvenue sur notre site WEB concernant notre projet de Terminale : le Kart Electrique Connecté.</td>
+                    </tr>
+                    <tr> 
+                        <td>Ce projet est réalisé par : Dmytro TUTOVAN, Daniel RODRIGUES AMORIM, Zakaria Hmoud et Alvin LAKE</td>
+                    </tr>
+                    <tr> 
+                      <td>Le but de ce projet est de transformer un kart thermique en un kart électrique connecté afin de participer au challenge pédagogique international e-kart "Mobelim Challenge ton Kart 2023". Il faut réaliser un kart capable de se déplacer grâce à l'énergie électrique en toute sécurité et d'afficher des informations (vitesse, autonomie) sur un afficheur à bord et sur un site Internet.</td>
+                    </tr>
+                    <tr> 
+                        <td> Ce site WEB contient un tableau de bord avec des informations en temps réel où le pilote ainsi que la gérance peuvent accéder aux statistiques comme le meilleur tour, la consommation en 1 tour etc. La gérance a enplus de toutes les informations du tableau de bord, une zone réunisant d'autres informations dont certaines pouvant être réinitialisées grâce à un bouton fait pour cette occasion. </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

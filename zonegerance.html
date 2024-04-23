@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Gérance - KART E.C.</title>
+    <link rel="icon" type="image/x-icon" href="https://s2.qwant.com/thumbr/0x380/d/6/8aaf2f2b76abf61ac31bd7cc470521dd78f6385cd5e81fc556d24a78c463c8/Alpine-logo-1440x900.png?u=https%3A%2F%2Fwww.carlogos.org%2Flogo%2FAlpine-logo-1440x900.png&q=0&b=1&p=0&a=0.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #680000;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(255, 47, 47); 
+            position: fixed; 
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block; 
+            color: #fff; 
+            text-align: center;
+            padding: 26px 28px; /* marge entre les boutons et le bord de la page */
+            text-decoration: none;
+            transition: background-color 1s;
+        }
+        .navbar span {
+            float: center;
+            display: block; 
+            color: #ff0000; 
+            font-size: 30px;
+            padding: 10px 10px; 
+            background-color: #ffffff;
+        }
+        .navbar a:hover { /* quand on passe la souris dessus */
+            background-color: #ffffff; 
+            color: #fc0000; 
+        }
+        .navbar img {
+            float: right;
+            margin-right: 10px; 
+            height: 70px;
+        }
+        .content {
+            margin-top: 160px; /* marge de la hauteur */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content2 {
+            margin-top: 50px; /* marge de la hauteur */
+        }
+        .container2 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .animation {
+            display: block;
+            text-align: center;
+            animation: pulse 1s infinite;
+            font-size: 20px;
+        }
+        .bouton {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .bouton a {
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 13px 10px; /* marge entre les boutons et le bord de la page */
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 2500ms;
+            transition: font-size 1400ms;
+        }
+        .bouton a:hover { /* quand on passe la souris dessus */
+            color: #fc0000;
+            font-size: 22px;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span> Projet KART E.C. / Terminale 3 - 2024</span>
+        <img src="https://lyceeionesco.fr/sites/default/files/Logo300.jpg" alt="Logo" /> <!-- Image provenant d'un lien Internet -->
+        <a href="about.html">Accueil</a>
+        <a href="index.html">Tableau de Bord</a>
+        <a href="#">Zone de Gérance</a>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1>Tableau de Bord en direct</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Information</th>
+                        <th>Valeur</th>
+                        <th>Comparatif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vitesse instantanée</td>
+                        <td>A DEFINIR km/h</td>
+                        <td>(avis)</td>
+                    </tr>
+                    <tr>
+                        <td>Vitesse moyenne sur la course</td>
+                        <td>A DEFINIR km/h</td>
+                        <td>(avis)</td>
+                    </tr>
+                    <tr>
+                        <td>Vitesse moyenne/tour</td>
+                        <td>A DEFINIR km/h</td>
+                        <td>(avis)</td>
+                    </tr>
+                    <tr>
+                        <td>Vitesse maximale sur la course</td>
+                        <td>A DEFINIR km/h</td>
+                        <td>(avis)</td>
+                    </tr>
+                    <div class="animation">Informations en temps réel...</div>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="container2">
+            <h1>Autonomie en direct</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Information</th>
+                        <th>Valeur</th>
+                        <th>Comparatif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Autonomie restante</td>
+                        <td>A DEFINIR %</td>
+                        <td>(avis/prédictions)</td>
+                    </tr>
+                    <tr>
+                        <td>Consommation durant la dernière course</td>
+                        <td>A DEFINIR %</td>
+                        <td>(avis/prédictions)</td>
+                    </tr>
+                    <tr>
+                        <td>Autonomie restante/course</td>
+                        <td>A DEFINIR %</td>
+                        <td>(avis/prédictions)</td>
+                    </tr>
+                    <div class="animation">Informations en temps réel...</div>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bouton">
+        <button><a>Réinitialiser les statistiques</a></button>
+    </div>
+</body>
+</html>
